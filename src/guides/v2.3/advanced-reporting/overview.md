@@ -16,6 +16,7 @@ Magento collects data and sends this information to the MBI for analytics.
 1. In the Magento configuration, the [Base URL (Secure) setting][base url]{:target="_blank"} for the store view must point to the secure URL. For example https://yourdomain.com.
 1. In the Magento configuration, **Use Secure URLs on Storefront**, **and Use Secure URLs in Admin** must be set to **Yes**.
 1. Make sure that [Magento crontab]{:target="_blank"} is created and cron jobs are running on the installed server.
+1. Make sure system have permission to create root directory folder "/tmp/analytics/tmp" otherwise, this will cause a cron error "Directory "/tmp/analytics/tmp" cannot be created Warning!mkdir(): Permission denied".
 
 The merchant can now click on the Go to Advanced Reporting button on the Admin dashboard to launch the advanced reporting features at `https://advancedreporting.rjmetrics.com/report`.
 
